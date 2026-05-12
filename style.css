@@ -1,0 +1,350 @@
+/* ===== styles.css ===== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #ffffff;
+  color: #1a1a1a;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* --- Navigation --- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 32px;
+  background: white;
+  border-bottom: 1px solid #f0f0f0;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #111;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #2c2c2c;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #d46b4c;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.nav-actions span {
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.menu-toggle {
+  font-size: 1.5rem;
+  display: none;
+}
+
+/* --- Hero --- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 48px 32px;
+  background: #faf7f4;
+  border-radius: 0 0 8px 8px;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.hero-text {
+  max-width: 550px;
+}
+
+.hero-text h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  color: #1e1e1e;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #4a4a4a;
+  margin: 20px 0 28px;
+  font-weight: 400;
+}
+
+.btn {
+  display: inline-block;
+  background: #1e1e1e;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.25s, transform 0.15s;
+  letter-spacing: 0.3px;
+}
+
+.btn:hover {
+  background: #d46b4c;
+  transform: translateY(-2px);
+}
+
+.hero-image {
+  background: #e9e2d8;
+  width: 280px;
+  height: 320px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5e5e5e;
+  font-weight: 500;
+  background-image: linear-gradient(135deg, #d9cfc0 0%, #c8b9a8 100%);
+  box-shadow: 0 20px 30px -10px rgba(0,0,0,0.08);
+}
+
+/* --- Culture Section --- */
+.culture-section {
+  padding: 56px 32px;
+  display: flex;
+  gap: 48px;
+  flex-wrap: wrap;
+  background: white;
+}
+
+.culture-box {
+  flex: 1 1 250px;
+}
+
+.culture-box h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #111;
+}
+
+.culture-box p {
+  color: #4d4d4d;
+  font-size: 1rem;
+}
+
+/* --- Collections Header --- */
+.collections-header {
+  padding: 24px 32px 16px;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* --- Product Grid --- */
+.product-grid {
+  display: flex;
+  gap: 24px;
+  padding: 8px 32px 48px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  flex: 1 1 200px;
+  background: #f9f7f4;
+  border-radius: 20px;
+  padding: 20px 16px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.25s;
+  border: 1px solid #f0ebe2;
+}
+
+.product-card:hover {
+  box-shadow: 0 12px 24px -8px rgba(0,0,0,0.08);
+  border-color: #d4c5b2;
+}
+
+.product-img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  background: #ddd6cc;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: #3d3d3d;
+  font-weight: 500;
+}
+
+.product-title {
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 6px 0 4px;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #1e1e1e;
+  margin: 6px 0 12px;
+}
+
+.small-btn {
+  background: white;
+  border: 1px solid #d1cdc5;
+  padding: 8px 22px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.2s;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.small-btn:hover {
+  background: #1e1e1e;
+  color: white;
+  border-color: #1e1e1e;
+}
+
+/* --- Inspiration / Wardrobe --- */
+.inspo-section {
+  background: #f5f2ed;
+  padding: 48px 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inspo-text h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.inspo-text p {
+  color: #3f3f3f;
+  max-width: 400px;
+}
+
+.wardrobe-tags {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.wardrobe-card {
+  background: white;
+  padding: 18px 24px;
+  border-radius: 20px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.03);
+  min-width: 150px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.wardrobe-card small {
+  font-weight: 400;
+  color: #5c5c5c;
+}
+
+/* --- Footer --- */
+.footer {
+  background: #1e1e1e;
+  color: #e0e0e0;
+  padding: 40px 32px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #cccccc;
+  text-decoration: none;
+  margin-right: 24px;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+    display: none; /* hidden by default on mobile (toggled via JS) */
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-width: 280px;
+  }
+}
